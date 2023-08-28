@@ -4,66 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title of Site -->
     <title>My Portfolio</title>
-<!-- style.css is always first, before reset.css -->
     <link rel="stylesheet" href="./assets/css/stylesheet.css" />
-
 </head>
 <body>
-    <!-- Position top left -->
-    <header>
-        <h1> Eric Keeton </h1>
-    <nav>
-        <!-- position in top right corner in a nav bar style -->
-        <!-- all nav bar items should link to the coresponding section -->
-        <ul>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact Me</a></li>
-            <li><a href="#">Resume</a></li>
-        </ul>
-    </nav>
-</header>
-<h2><a class="subtitle"></a>Cool Subtitle here</h2>
-<main>
-    <section>
-        <article>
-           <p>Paragraph about this section.</p>
-        </article>
-    </section>
-    <br>
-        <!-- All images must have an outline, a border, a hover feature that changes colors, and an image icon  -->
-    <section>
-        <a href="#">large IMAGE</a>
-        <br>
-        <a class="images" href="#">inline IMAGE</a>
-        <a class="images" href="#">inline IMAGE2</a>
-        <a class="images" href="#">row2 inline1</a>
-        <a class="images" href="#">row2 inline2</a>
-    </section>
-    <br>
-</main>
-    <!-- the aside is one the right, and has 3 headers, 1) About me 2) Work 2) Contact me -->
-    <aside>
-        <ul>
-            <li>
+
+<header>
+    <h1>My Portfolio</h1>
+    <ul>
         <a href="#">About Me</a>
-        <br>
         <a href="#">Work</a>
-            </li>
-        </ul>
+        <a href="#">Contact Me</a>
+        <a href="#">Resume</a>
+    </ul>
+  </header>
+
+  <nav>
+    <h1><a href="#">Something Cool Here</a></h1>
+  </nav>
+  <main>
+    <aside>
+        <section class="aside">
+            <h2>About me:</h2>
+        </section>
+        <section class="aside2">
+            <h2>Work:</h2>
+        </section>
     </aside>
-
-
-</body>
-<!-- Footer section with contact me: My number, my email, my github, and my social media links,  -->
-<br>
-<footer>
-    <h2>Contact me</h2>
+    <!-- I had to make a class and id for the big card, and then a class for the sections, and a class for the smaller images. -->
+    
+    
+    <span class="big-image"></div>
+        <section class="paragraph">
+            <p>YOYOYO THIS IS WHERE I WILL WRITE ALL THAT STUFF</p> 
+        </section>
+        <section id="big-pic">
+            <img src="./assets/images/vecteezy_close-up-of-businessman-working-with-laptop-computer-on__804.jpg" alt="hands typing on a keyboard." />
+        </section>
+   
+    <div class="images">     
+      <section class="pic">
+        <img src="./assets/images/vecteezy_business-team-present-photo-professional-investor-working_14850249_460.jpg" alt="business person working with calculator, laptop, and cellphone." />
+      </section>
+      <section class="pic">
+        <img src="./assets/images/vecteezy_casual-man-using-computer-on-the-desk_10720495_404.jpg" alt="business person utilizing multiple screens" />
+      </section>
+    </div>
+    <div class="images">
+      <section class="pic">
+        <img
+          src="./assets/images/vecteezy_business-concept-woman-in-blue-shirt-typing-on-computer_6908766_529.jpg"
+          alt="business person typing on a laptop"
+        />
+      </section>
+      <section class="pic">
+        <img
+          src="./assets/images/vecteezy_hand-person-working-and-using-on-a-laptop-computer-for-a-freelance-working-with-closeup-finger-an-input-keyboard-for-online-blogger-job-to-a-black-computer-on-a-wooden-table-at-home_1900924.jpg"
+          alt="close up of pressing enter on a keyboard"
+        />
+      </section>
+    </div>
+  </main>
+  <footer>
+    <h3>
+      Contact me:
+    </h3>
     <a href="#">555-555-5555</a>
     <a href="#">my Email</a>
     <a href="#">my Github</a>
     <a href="#">Social Media</a>
   </footer>
+</body>
 </html>
