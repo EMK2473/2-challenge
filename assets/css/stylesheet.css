@@ -8,6 +8,7 @@
     --red:#f85050;
     --purp:#ed50f8;
     --black:#000000;
+    --yellow: #e1de16;
     --marg-sec: 8px ;
     --pad-sec: 10px ;
 }
@@ -22,7 +23,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-  
+  /* gray header My Portfolio */
 header {
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
@@ -90,15 +91,17 @@ header ul{
   }
   /* the "something cool here" anchor in the nav bar */
   nav a{
+    cursor: crosshair;
+    position: relative;
     color: var(--white);
     padding: var(--pad-sec);
     margin: var(--marg-sec);
   }
 
   /* something cool */
-  nav h1 a:hover{
+  nav h1 a:hover::after{
+    content: " This is cool.";
     color: var(--orange);
-    
       }
 /* purple paragraph section */
 .paragraph {
@@ -152,18 +155,18 @@ header ul{
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
-
+/* white text footer Contact me */
   footer h3{
     text-indent: 200px;
     margin: var(--marg-sec);
     font-size: 300%;
   }
-/* i'd rather get the space between than an indent */
-.foot {
-    text-indent: 700px;
-}
 
-
+/* footer links highlight white */
+  footer ul a:hover{
+color: var(--white);
+  }
+/* orange about me aside */
   .aside { 
     height: 200px;
     border-right: 3px;
@@ -172,13 +175,14 @@ header ul{
     margin-bottom: 100px;
 
   }
+  /* orange work aside */
   .aside2 { 
     height: 1795px;
     border-right: 3px;
     margin: var(--marg-sec);
     border-right-style: solid;
   }
-  
+  /* class for big image */
   .big-image {
     flex: 5;
     background-color: var(--white);
@@ -186,7 +190,7 @@ header ul{
     display: flex;
     flex-wrap: wrap;
   }
-
+/* class for images */
   .images {
     flex-flow: row;
     background-color: var(--white);
@@ -197,7 +201,7 @@ header ul{
     justify-content:space-evenly;
     align-items: flex-start;
   }
-  
+  /* big picture format */
   #big-pic {
     border-style:solid;
     width: 100%;
@@ -209,7 +213,7 @@ header ul{
     padding: 30px;
 
   }
-
+/* little picture class format */
   .pic {
     width: 50%;
     border-style: solid;
@@ -221,9 +225,9 @@ header ul{
     padding: var(--pad-sec);
     margin: var(--marg-sec);
   }
- 
+ /* pic images format */
   .pic img {
-    cursor: grab;
+    cursor: pointer;
     width: 100%;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
@@ -231,16 +235,35 @@ header ul{
     border-bottom-right-radius: 60px;
     padding: 30px;
   }
-  
+  /* shrink and change color of pics */
+  .pic:hover {
+    cursor: pointer;
+    background-color: var(--yellow);
+    width: 49%;
+    padding: 30px;
+  }
+/* big pic image format */
   #big-pic img {
-    cursor: grab;
+    cursor: pointer;
     width: 100%;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
+/* shrink and change color of big-pic */
+  #big-pic:hover {
+    cursor: pointer;
+    width: 99%;
+    background-color: var(--yellow);
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
 
+
+  /* need to resolve media query */
   @media screen and (max-width: 768px) {
     main,
     nav {
