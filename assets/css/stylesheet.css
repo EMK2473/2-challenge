@@ -1,14 +1,15 @@
 /* color scheme and variables */
-
 :root{
     --blue:#586eee;
     --green: #4d9b26;
     --gray: #525256;
     --orange: #f7ae05;
     --white:#ffff;
-    --margin-pics: 8px ;
-    --padding-pics: 10px ;
-    
+    --red:#f85050;
+    --purp:#ed50f8;
+    --black:#000000;
+    --marg-sec: 8px ;
+    --pad-sec: 10px ;
 }
 
 * {
@@ -20,121 +21,177 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    justify-content: flex-start;
 }
   
 header {
-    padding: var(--padding-pics);
-    margin: var(--margin-pics);
-    text-align: center;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    padding: var(--pad-sec);
+    margin: var(--marg-sec);
     background: var(--gray);
+    border-style: solid;
+    border-color: var(--black);
     color: var(--white);
 }
   
 /* My Portfolio Header */
 h1 {
     color: var(--white);
+    text-decoration: underline;
     text-align: left;
     font-size: 250%;
   }
-/* About me and Work headers */
+  
+/* About me and Work headers in orange aside */
 h2 {
     text-decoration: underline;
     text-align: right;
     font-size: 500%;
-    padding: var(--padding-pics);
-    margin-bottom:var(--margin-pics);
+    padding: var(--pad-sec);
+    margin-bottom:var(--marg-sec);
+    color: var(--white);
+
+}
+/* footer heading style */
+h3 {
+    text-decoration: underline;
+    text-align: left;
+    font-size: 100%;
+    padding: var(--pad-sec);
+    margin-bottom:var(--marg-sec);
     color: var(--white);
 
 }
 
-/* moving link/lists in header to right */
+/* moving about me,work, contact me, and resume to right in header */
 header ul{
+    padding: var(--pad-sec);
     text-align: end;
+  }
+/* hovers white */
+  header ul a:hover{
+    color: var(--white);
   }
 /* green nav bar */
   nav {
     display: flex;
+    border-style: solid;
+    border-color: var(--black);
     background-color: var(--green);
-    padding: var(--padding-pics);
-    margin: var(--margin-pics);
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    padding: var(--pad-sec);
+    margin: var(--marg-sec);
     justify-content: right;
   }
   /* the "something cool here" anchor in the nav bar */
   nav a{
     color: var(--white);
-    padding: var(--padding-pics);
-    margin: var(--margin-pics);
-    
+    padding: var(--pad-sec);
+    margin: var(--marg-sec);
   }
-  
 
+  /* something cool */
+  nav h1 a:hover{
+    color: var(--orange);
+    
+      }
+/* purple paragraph section */
 .paragraph {
     color: var(--white);
     font-size: 150%;
     width: 100%;
     height: 300px;
-    background-color: var(--blue);
-    margin: var(--margin-pics);
+    border-style: solid;
+    border-color: var(--black);
+    background-color: var(--purp);
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    margin: var(--marg-sec);
     padding: 50px; 
 }
-
+/* flex wrap main for structure */
   main {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
   }
-  
+/* orange aside section */
   aside {
     flex: 2;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
     background-color: var(--orange);
-    padding: var(--padding-pics));
-    margin: var(--margin-pics);
-    text-align: left;
+    border-color: var(--black);
+    border-style: solid;
+    padding: var(--pad-sec);
+    margin: var(--marg-sec);
   }
   
-
+/* red footer */
   footer {
+    flex: 1;
     width: 100%;
-    padding: 20px;
     text-align: center;
-    background: var(--blue);
+    background: var(--red);
     color: var(--white);
-    margin: var(--margin-pics);
-    padding: var(--padding-pics);
+    margin: var(--marg-sec);
+    padding: var(--pad-sec);
+    border-style: solid;
+    border-color: var(--black);
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
+
+  footer h3{
+    text-indent: 200px;
+    margin: var(--marg-sec);
+    font-size: 300%;
+  }
+/* i'd rather get the space between than an indent */
+.foot {
+    text-indent: 700px;
+}
 
 
   .aside { 
     height: 200px;
     border-right: 3px;
-    margin: var(--margin-pics);
+    margin: var(--marg-sec);
     border-right-style: solid;
     margin-bottom: 100px;
 
   }
   .aside2 { 
-    height: 1900px;
+    height: 1795px;
     border-right: 3px;
-    margin: var(--margin-pics);
+    margin: var(--marg-sec);
     border-right-style: solid;
   }
   
   .big-image {
     flex: 5;
     background-color: var(--white);
-    padding: var(--padding-pics);
+    padding: var(--pad-sec);
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
   }
 
   .images {
     flex-flow: row;
     background-color: var(--white);
-    padding: var(--padding-pics);
-    margin: var(--margin-pics);
+    padding: var(--pad-sec);
+    margin: var(--marg-sec);
     display: flex;
     flex-wrap: nowrap;
     justify-content:space-evenly;
@@ -142,38 +199,41 @@ header ul{
   }
   
   #big-pic {
+    border-style:solid;
     width: 100%;
-    border-style: solid;
+    background-color: var(--blue);
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
-    border-width: 10px;
-    padding: var(--padding-pics);
-    margin: var(--margin-pics);
+    padding: 30px;
+
   }
 
   .pic {
     width: 50%;
     border-style: solid;
+    background-color: var(--blue);
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
-    border-width: 5px;
-    padding: var(--padding-pics);
-    margin: var(--margin-pics);
+    padding: var(--pad-sec);
+    margin: var(--marg-sec);
   }
  
   .pic img {
+    cursor: grab;
     width: 100%;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+    padding: 30px;
   }
   
   #big-pic img {
+    cursor: grab;
     width: 100%;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
