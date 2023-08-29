@@ -1,273 +1,278 @@
 /* color scheme and variables */
-:root{
-    --blue:#586eee;
-    --green: #4d9b26;
-    --gray: #525256;
-    --orange: #f7ae05;
-    --white:#ffff;
-    --red:#f85050;
-    --purp:#ed50f8;
-    --black:#000000;
-    --yellow: #e1de16;
-    --marg-sec: 8px ;
-    --pad-sec: 10px ;
+:root {
+  --blu: #586eee;
+  --green: #4d9b26;
+  --gray: #525256;
+  --orange: #f7ae05;
+  --white: #ffff;
+  --red: #f85050;
+  --purp: #ed50f8;
+  --black: #000000;
+  --yellow: #faf75e;
+  --marg-sec: 8px;
+  --pad-sec: 10px;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-  
+
 body {
-    font-family: Arial;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+  font-family: Arial;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
-  /* gray header My Portfolio */
+/* gray header My Portfolio */
 header {
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-    padding: var(--pad-sec);
-    margin: var(--marg-sec);
-    background: var(--gray);
-    border-style: solid;
-    border-color: var(--black);
-    color: var(--white);
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  padding: var(--pad-sec);
+  margin: var(--marg-sec);
+  background: var(--gray);
+  border-style: solid;
+  border-color: var(--black);
+  color: var(--white);
 }
-  
+
 /* My Portfolio Header */
 h1 {
-    color: var(--white);
-    text-decoration: underline;
-    text-align: left;
-    font-size: 250%;
-  }
-  
+  margin-top: 150px;
+  color: var(--white);
+  text-decoration: underline;
+  text-align: left;
+  font-size: 250%;
+}
+
 /* About me and Work headers in orange aside */
 h2 {
-    text-decoration: underline;
-    text-align: right;
-    font-size: 500%;
-    padding: var(--pad-sec);
-    margin-bottom:var(--marg-sec);
-    color: var(--white);
-
+  text-decoration: underline;
+  text-align: right;
+  font-size: 500%;
+  padding: var(--pad-sec);
+  margin-bottom: var(--marg-sec);
+  color: var(--white);
 }
 /* footer heading style */
 h3 {
-    text-decoration: underline;
-    text-align: left;
-    font-size: 100%;
-    padding: var(--pad-sec);
-    margin-bottom:var(--marg-sec);
-    color: var(--white);
-
+  text-decoration: underline;
+  text-align: left;
+  font-size: 100%;
+  padding: var(--pad-sec);
+  margin-bottom: var(--marg-sec);
+  color: var(--white);
 }
 
+header img{
+  margin-left: 550px;
+}
 /* moving about me,work, contact me, and resume to right in header */
-header ul{
-    padding: var(--pad-sec);
-    text-align: end;
-  }
+header ul {
+  padding: var(--pad-sec);
+  text-align: end;
+}
 /* hovers white */
-  header ul a:hover{
-    color: var(--white);
-  }
+header ul a:hover {
+  color: var(--white);
+}
 /* green nav bar */
-  nav {
-    display: flex;
-    border-style: solid;
-    border-color: var(--black);
-    background-color: var(--green);
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-    padding: var(--pad-sec);
-    margin: var(--marg-sec);
-    justify-content: right;
-  }
-  /* the "something cool here" anchor in the nav bar */
-  nav a{
-    cursor: crosshair;
-    position: relative;
-    color: var(--white);
-    padding: var(--pad-sec);
-    margin: var(--marg-sec);
-  }
+nav {
+  display: flex;
+  border-style: solid;
+  border-color: var(--black);
+  background-color: var(--green);
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  padding: var(--pad-sec);
+  margin: var(--marg-sec);
+  justify-content: right;
+}
+/* the "something cool here" anchor in the nav bar */
+nav a {
+  cursor: crosshair;
+  position: relative;
+  color: var(--white);
+  padding: var(--pad-sec);
+  margin: var(--marg-sec);
+}
 
-  /* something cool */
-  nav h1 a:hover::after{
-    content: " This is cool.";
-    color: var(--orange);
-      }
+/* something cool */
+nav h1 a:hover::after {
+  content: " This is kind of cool.";
+  color: var(--orange);
+}
 /* purple paragraph section */
 .paragraph {
-    color: var(--white);
-    font-size: 150%;
-    width: 100%;
-    height: 300px;
-    border-style: solid;
-    border-color: var(--black);
-    background-color: var(--purp);
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-    margin: var(--marg-sec);
-    padding: 50px; 
+  color: var(--white);
+  font-size: 150%;
+  width: 100%;
+  height: 300px;
+  border-style: solid;
+  border-color: var(--black);
+  background-color: var(--purp);
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  margin: var(--marg-sec);
+  padding: 50px;
 }
 /* flex wrap main for structure */
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-  }
+main {
+  display: flex;
+  flex-grow: 1;
+}
 /* orange aside section */
-  aside {
-    flex: 2;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-    background-color: var(--orange);
-    border-color: var(--black);
-    border-style: solid;
-    padding: var(--pad-sec);
-    margin: var(--marg-sec);
-  }
-  
+aside {
+  flex: 2;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  background-color: var(--orange);
+  border-color: var(--black);
+  border-style: solid;
+  padding: var(--pad-sec);
+  margin: var(--marg-sec);
+}
+
 /* red footer */
-  footer {
-    flex: 1;
-    width: 100%;
-    text-align: center;
-    background: var(--red);
-    color: var(--white);
-    margin: var(--marg-sec);
-    padding: var(--pad-sec);
-    border-style: solid;
-    border-color: var(--black);
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-  }
+footer {
+  flex: 1;
+  width: 100%;
+  text-align: center;
+  background: var(--red);
+  color: var(--white);
+  margin: var(--marg-sec);
+  padding: var(--pad-sec);
+  border-style: solid;
+  border-color: var(--black);
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
 /* white text footer Contact me */
-  footer h3{
-    text-indent: 200px;
-    margin: var(--marg-sec);
-    font-size: 300%;
-  }
+footer h3 {
+  text-indent: 200px;
+  margin: var(--marg-sec);
+  font-size: 300%;
+}
 
 /* footer links highlight white */
-  footer ul a:hover{
-color: var(--white);
-  }
+footer ul a:hover {
+  color: var(--white);
+}
 /* orange about me aside */
-  .aside { 
-    height: 200px;
-    border-right: 3px;
-    margin: var(--marg-sec);
-    border-right-style: solid;
-    margin-bottom: 100px;
-
-  }
-  /* orange work aside */
-  .aside2 { 
-    height: 1795px;
-    border-right: 3px;
-    margin: var(--marg-sec);
-    border-right-style: solid;
-  }
-  /* class for big image */
-  .big-image {
-    flex: 5;
-    background-color: var(--white);
-    padding: var(--pad-sec);
-    display: flex;
-    flex-wrap: wrap;
-  }
+.aside {
+  height: 275px;
+  border-right: 3px;
+  margin: var(--marg-sec);
+  border-right-style: solid;
+  margin-bottom: 100px;
+}
+/* orange work aside */
+.aside2 {
+  height: 1800px;
+  border-right: 3px;
+  margin: var(--marg-sec);
+  border-right-style: solid;
+}
+/* class for big image */
+.big-image {
+  flex-basis: 100%;
+  background-color: var(--white);
+  padding: var(--pad-sec);
+}
 /* class for images */
-  .images {
-    flex-flow: row;
-    background-color: var(--white);
-    padding: var(--pad-sec);
-    margin: var(--marg-sec);
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content:space-evenly;
-    align-items: flex-start;
-  }
-  /* big picture format */
-  #big-pic {
-    border-style:solid;
-    width: 100%;
-    background-color: var(--blue);
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-    padding: 30px;
-
-  }
+/* need to figure out how to space each box to fill it's container better */
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--white);
+  padding: var(--pad-sec);
+  margin: var(--marg-sec);
+  justify-content: space-evenly;
+}
+/* big picture format */
+#big-pic {
+  border-style: solid;
+  width: 100%;
+  background-color: var(--blu);
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  padding: 30px;
+}
 /* little picture class format */
-  .pic {
-    width: 50%;
-    border-style: solid;
-    background-color: var(--blue);
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-    padding: var(--pad-sec);
-    margin: var(--marg-sec);
-  }
- /* pic images format */
-  .pic img {
-    cursor: pointer;
-    width: 100%;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-    padding: 30px;
-  }
-  /* shrink and change color of pics */
-  .pic:hover {
-    cursor: pointer;
-    background-color: var(--yellow);
-    width: 49%;
-    padding: 30px;
-  }
+/* need to figure out how to space each box to fill it's container better #2 */
+.pic {
+  display: flex;
+  width: 50%;
+  flex-basis: 350px;
+  border-style: solid;
+  background-color: var(--blu);
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  padding: var(--pad-sec);
+  margin: var(--marg-sec);
+}
+/* pic images format */
+.pic img {
+  cursor: pointer;
+  width: 100%;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  padding: 30px;
+}
+/* shrink and change color of pics */
+.pic:hover {
+  cursor: pointer;
+  background-color: var(--yellow);
+  width: 49%;
+  padding: 30px;
+}
 /* big pic image format */
-  #big-pic img {
-    cursor: pointer;
-    width: 100%;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-  }
+#big-pic img {
+  cursor: pointer;
+  width: 100%;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
 /* shrink and change color of big-pic */
-  #big-pic:hover {
-    cursor: pointer;
-    width: 99%;
-    background-color: var(--yellow);
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
+#big-pic:hover {
+  cursor: pointer;
+  width: 99%;
+  background-color: var(--yellow);
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+/* need to resolve media query */
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
   }
+}
 
 
-  /* need to resolve media query */
-  @media screen and (max-width: 768px) {
-    main,
-    nav {
-      flex-direction: column;
-    }
-  }
-  
+/* I think I did alright. I did build this from the ground up, and broke it many times in the process of getting to it's current build. I can't wait for the feedback! 
+Thank you!
+
+_e
+
+*/
