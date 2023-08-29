@@ -15,4 +15,4 @@
 ## Deployed link: https://emk2473.github.io/2-challenge/
 
 ## Screenshot of deployed site:
-![Alt text](image.png)
+![Alt text](./assets/images/screenshot.png)
