@@ -37,6 +37,9 @@ header {
   color: var(--white);
 }
 
+header img{
+flex-direction: row;
+}
 /* My Portfolio Header */
 h1 {
   margin-top: 150px;
