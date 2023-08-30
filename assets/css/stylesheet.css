@@ -1,14 +1,17 @@
 /* color scheme and variables */
 :root {
-  --blu: #586eee;
-  --green: #4d9b26;
-  --gray: #525256;
-  --orange: #f7ae05;
+  --chocolate: #3f3837;
+  --honeydew:#e5f4e3;
+  --vdyke: #433633;
+  --gray: #a89d94;
+  --dgray:#766f69;
+  --dun: #decbb7;
   --white: #ffff;
-  --red: #f85050;
-  --purp: #ed50f8;
+  --lblue: #e2f2f4;
+  --h1: #05180d;
+  --wine: #623646;
   --black: #000000;
-  --yellow: #faf75e;
+  --magnolia: #f7f0f5;
   --marg-sec: 8px;
   --pad-sec: 10px;
 }
@@ -16,14 +19,19 @@
 * {
   box-sizing: border-box;
 }
-
+/* flex wrap main for structure */
+main {
+  display: flex;
+  flex-grow: 1;
+}
 body {
   font-family: Arial;
   margin: 0;
   display: flex;
   flex-direction: column;
+  background-color: var(--honeydew);
 }
-/* gray header My Portfolio */
+/* lblue header My Portfolio */
 header {
   display: flex;
   border-top-left-radius: 60px;
@@ -32,7 +40,7 @@ header {
   border-bottom-right-radius: 60px;
   padding: var(--pad-sec);
   margin: var(--marg-sec);
-  background: var(--gray);
+  background: var(--lblue);
   border-style: solid;
   border-color: var(--black);
   color: var(--white);
@@ -41,13 +49,13 @@ header {
 /* My Portfolio Header */
 h1 {
   margin-top: 150px;
-  color: var(--white);
+  color: var(--h1);
   text-decoration: underline;
   text-align: left;
   font-size: 250%;
 }
 
-/* About me and Work headers in orange aside */
+/* About me and Work headers in gray aside */
 h2 {
   text-decoration: underline;
   text-align: right;
@@ -66,24 +74,32 @@ h3 {
   color: var(--white);
 }
 
+h4{
+  color: black;
+  font-size: 250%;
+  text-align: center;
+  text-decoration: underline;
+}
+
 /* header img{
   margin-left: 950px;
 
 } */
 /* moving about me,work, contact me, and resume to right in header */
-header ul{
+header ul a{
   text-align: right;
 }
+
 /* hovers white */
 header ul a:hover {
   color: var(--white);
 }
-/* green nav bar */
+/* dun nav bar */
 nav {
   display: flex;
   border-style: solid;
   border-color: var(--black);
-  background-color: var(--green);
+  background-color: var(--dun);
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
   border-bottom-left-radius: 60px;
@@ -104,9 +120,9 @@ nav a {
 /* something cool */
 nav h1 a:hover::after {
   content: " This is kind of cool.";
-  color: var(--orange);
+  color: var(--wine);
 }
-/* purple paragraph section */
+/* chocolatele paragraph section */
 .paragraph {
   color: var(--white);
   font-size: 150%;
@@ -114,7 +130,7 @@ nav h1 a:hover::after {
   height: 300px;
   border-style: solid;
   border-color: var(--black);
-  background-color: var(--purp);
+  background-color: var(--wine);
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
   border-bottom-left-radius: 60px;
@@ -122,31 +138,27 @@ nav h1 a:hover::after {
   margin: var(--marg-sec);
   padding: 50px;
 }
-/* flex wrap main for structure */
-main {
-  display: flex;
-  flex-grow: 1;
-}
-/* orange aside section */
+
+/* gray aside section */
 aside {
   flex: 2;
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
-  background-color: var(--orange);
+  background-color: var(--dgray);
   border-color: var(--black);
   border-style: solid;
   padding: var(--pad-sec);
   margin: var(--marg-sec);
 }
 
-/* red footer */
+/* wine footer */
 footer {
   flex: 1;
   width: 100%;
   text-align: center;
-  background: var(--red);
+  background: var(--lblue);
   color: var(--white);
   margin: var(--marg-sec);
   padding: var(--pad-sec);
@@ -169,7 +181,7 @@ footer ul a:hover {
   color: var(--white);
 }
 
-/* orange about me aside */
+/* dun about me aside */
 .aside {
   height: 275px;
   border-right: 3px;
@@ -177,7 +189,7 @@ footer ul a:hover {
   border-right-style: solid;
   margin-bottom: 100px;
 }
-/* orange work aside */
+/* dun work aside */
 .aside2 {
   height: 1800px;
   border-right: 3px;
@@ -187,7 +199,7 @@ footer ul a:hover {
 /* class for big image */
 .big-image {
   flex-basis: 100%;
-  background-color: var(--white);
+  background-color: var(--honeydew);
   padding: var(--pad-sec);
 }
 /* class for images */
@@ -195,7 +207,7 @@ footer ul a:hover {
 .images {
   display: flex;
   flex-wrap: wrap;
-  background-color: var(--white);
+  background-color: var(--honeydew);
   padding: var(--pad-sec);
   margin: var(--marg-sec);
   justify-content: space-evenly;
@@ -204,7 +216,7 @@ footer ul a:hover {
 #big-pic {
   border-style: solid;
   width: 100%;
-  background-color: var(--blu);
+  background-color: var(--gray);
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
   border-bottom-left-radius: 60px;
@@ -218,7 +230,7 @@ footer ul a:hover {
   width: 50%;
   flex-basis: 350px;
   border-style: solid;
-  background-color: var(--blu);
+  background-color: var(--gray);
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
   border-bottom-left-radius: 60px;
@@ -239,7 +251,7 @@ footer ul a:hover {
 /* shrink and change color of pics */
 .pic:hover {
   cursor: pointer;
-  background-color: var(--yellow);
+  background-color: var(--lblue);
   width: 49%;
   padding: 30px;
 }
@@ -256,7 +268,7 @@ footer ul a:hover {
 #big-pic:hover {
   cursor: pointer;
   width: 99%;
-  background-color: var(--yellow);
+  background-color: var(--lblue);
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
   border-bottom-left-radius: 60px;
