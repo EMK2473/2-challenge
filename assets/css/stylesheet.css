@@ -1,10 +1,10 @@
 /* color scheme and variables */
 :root {
   --chocolate: #3f3837;
-  --honeydew:#f2fff1;
+  --honeydew: #f2fff1;
   --vdyke: #433633;
   --gray: #a89d94;
-  --dgray:#766f69;
+  --dgray: #766f69;
   --dun: #decbb7;
   --white: #ffff;
   --lblue: #e2f2f4;
@@ -34,10 +34,7 @@ body {
 /* lblue header My Portfolio */
 header {
   display: flex;
-  border-top-left-radius: 60px;
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
+  border-radius: 60px;
   padding: var(--pad-sec);
   margin: var(--marg-sec);
   background: var(--lblue);
@@ -74,19 +71,19 @@ h3 {
   color: var(--white);
 }
 
-h4{
+h4 {
   color: black;
   font-size: 250%;
   text-align: center;
   text-decoration: underline;
 }
 
-/* header img{
-  margin-left: 950px;
+header img{
+  margin-left: 250px;
 
-} */
+}
 /* moving about me,work, contact me, and resume to right in header */
-header ul a{
+header ul a {
   text-align: right;
 }
 
@@ -100,17 +97,14 @@ nav {
   border-style: solid;
   border-color: var(--black);
   background-color: var(--dun);
-  border-top-left-radius: 60px;
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
+  border-radius: 60px;
   padding: var(--pad-sec);
   margin: var(--marg-sec);
   justify-content: right;
 }
 /* the "something cool here" anchor in the nav bar */
 nav a {
-  cursor: crosshair;
+  cursor: pointer;
   position: relative;
   color: var(--white);
   padding: var(--pad-sec);
@@ -121,6 +115,8 @@ nav a {
 nav h1 a:hover::after {
   content: " This is kind of cool.";
   color: var(--wine);
+  text-decoration: underline;
+  text-decoration-color: var(--wine);
 }
 /* chocolatele paragraph section */
 .paragraph {
@@ -131,10 +127,7 @@ nav h1 a:hover::after {
   border-style: solid;
   border-color: var(--black);
   background-color: var(--wine);
-  border-top-left-radius: 60px;
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
+  border-radius: 60px;
   margin: var(--marg-sec);
   padding: 50px;
 }
@@ -142,10 +135,7 @@ nav h1 a:hover::after {
 /* gray aside section */
 aside {
   flex: 2;
-  border-top-left-radius: 60px;
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
+  border-radius: 60px;
   background-color: var(--dgray);
   border-color: var(--black);
   border-style: solid;
@@ -164,10 +154,7 @@ footer {
   padding: var(--pad-sec);
   border-style: solid;
   border-color: var(--black);
-  border-top-left-radius: 60px;
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
+  border-radius: 60px;
 }
 /* white text footer Contact me */
 footer h3 {
@@ -191,7 +178,7 @@ footer ul a:hover {
 }
 /* dun work aside */
 .aside2 {
-  height: 1800px;
+  height: 1900px;
   border-right: 3px;
   margin: var(--marg-sec);
   border-right-style: solid;
@@ -211,30 +198,25 @@ footer ul a:hover {
   padding: var(--pad-sec);
   margin: var(--marg-sec);
   justify-content: space-evenly;
+  object-fit: contain;
 }
 /* big picture format */
 #big-pic {
   border-style: solid;
   width: 100%;
   background-color: var(--gray);
-  border-top-left-radius: 60px;
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
+  border-radius: 60px;
   padding: 30px;
 }
 /* little picture class format */
 /* need to figure out how to space each box to fill it's container better #2 */
 .pic {
   display: flex;
-  width: 50%;
-  flex-basis: 350px;
+  width: 40%;
+  box-sizing: border-box;
   border-style: solid;
   background-color: var(--gray);
-  border-top-left-radius: 60px;
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
+  border-radius: 60px;
   padding: var(--pad-sec);
   margin: var(--marg-sec);
 }
@@ -242,13 +224,11 @@ footer ul a:hover {
 .pic img {
   cursor: pointer;
   width: 100%;
-  border-top-left-radius: 60px;
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
-  padding: 30px;
+  height: 100%;
+  border-radius: 60px;
+  object-fit: cover;
 }
-/* shrink and change color of pics */
+/* grow and change color of pics */
 .pic:hover {
   cursor: pointer;
   background-color: var(--lblue);
@@ -259,22 +239,15 @@ footer ul a:hover {
 #big-pic img {
   cursor: pointer;
   width: 100%;
-  border-top-left-radius: 60px;
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
+  border-radius: 60px;
 }
 /* shrink and change color of big-pic */
 #big-pic:hover {
   cursor: pointer;
   width: 99%;
   background-color: var(--lblue);
-  border-top-left-radius: 60px;
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
+  border-radius: 60px;
 }
-
 
 /* need to resolve media query */
 @media screen and (max-width: 768px) {
@@ -283,7 +256,6 @@ footer ul a:hover {
     flex-direction: column;
   }
 }
-
 
 /* I think I did alright. I did build this from the ground up, and broke it many times in the process of getting to it's current build. I can't wait for the feedback! 
 Thank you!
