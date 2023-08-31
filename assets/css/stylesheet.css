@@ -43,7 +43,11 @@ header {
   border-color: var(--black);
   color: var(--white);
 }
-
+/* padding for About-me/work/resume/contact-me */
+#ul{
+  padding: var(--pad-sec);
+  margin: var(--marg-sec);
+}
 /* My Portfolio Header */
 h1 {
   margin-top: 150px;
