@@ -25,13 +25,13 @@ main {
   flex-grow: 1;
 }
 body {
-  font-family: Arial;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 0;
   display: flex;
   flex-direction: column;
   background-color: var(--honeydew);
 }
-/* lblue header My Portfolio */
+/* header */
 header {
   display: flex;
   border-radius: 60px;
@@ -52,7 +52,7 @@ h1 {
   font-size: 250%;
 }
 
-/* About me and Work headers in gray aside */
+/* About me and Work headers aside */
 h2 {
   text-decoration: underline;
   text-align: right;
@@ -63,35 +63,26 @@ h2 {
 }
 /* footer heading style */
 h3 {
-  text-decoration: underline;
-  text-align: left;
-  font-size: 100%;
-  padding: var(--pad-sec);
-  margin-bottom: var(--marg-sec);
-  color: var(--white);
-}
-
-h4 {
   color: black;
   font-size: 250%;
   text-align: center;
   text-decoration: underline;
 }
 
-header img{
+header img {
   margin-left: 250px;
 
 }
-/* moving about me,work, contact me, and resume to right in header */
+
 header ul a {
   text-align: right;
 }
 
-/* hovers white */
+
 header ul a:hover {
   color: var(--white);
 }
-/* dun nav bar */
+
 nav {
   display: flex;
   border-style: solid;
@@ -102,7 +93,7 @@ nav {
   margin: var(--marg-sec);
   justify-content: right;
 }
-/* the "something cool here" anchor in the nav bar */
+
 nav a {
   cursor: pointer;
   position: relative;
@@ -118,7 +109,7 @@ nav h1 a:hover::after {
   text-decoration: underline;
   text-decoration-color: var(--wine);
 }
-/* chocolatele paragraph section */
+/* paragraph section */
 .paragraph {
   color: var(--white);
   font-size: 150%;
@@ -132,7 +123,7 @@ nav h1 a:hover::after {
   padding: 50px;
 }
 
-/* gray aside section */
+/* aside section */
 aside {
   flex: 2;
   border-radius: 60px;
@@ -143,7 +134,7 @@ aside {
   margin: var(--marg-sec);
 }
 
-/* wine footer */
+/* footer */
 footer {
   flex: 1;
   width: 100%;
@@ -156,19 +147,13 @@ footer {
   border-color: var(--black);
   border-radius: 60px;
 }
-/* white text footer Contact me */
-footer h3 {
-  text-indent: 200px;
-  margin: var(--marg-sec);
-  font-size: 300%;
-}
 
 /* footer links highlight white */
 footer ul a:hover {
   color: var(--white);
 }
 
-/* dun about me aside */
+/* about me aside */
 .aside {
   height: 275px;
   border-right: 3px;
@@ -176,7 +161,7 @@ footer ul a:hover {
   border-right-style: solid;
   margin-bottom: 100px;
 }
-/* dun work aside */
+/* work aside */
 .aside2 {
   height: 1900px;
   border-right: 3px;
@@ -190,7 +175,7 @@ footer ul a:hover {
   padding: var(--pad-sec);
 }
 /* class for images */
-/* need to figure out how to space each box to fill it's container better */
+
 .images {
   display: flex;
   flex-wrap: wrap;
@@ -200,7 +185,7 @@ footer ul a:hover {
   justify-content: space-evenly;
   object-fit: contain;
 }
-/* big picture format */
+/* big picture id */
 #big-pic {
   border-style: solid;
   width: 100%;
@@ -208,8 +193,7 @@ footer ul a:hover {
   border-radius: 60px;
   padding: 30px;
 }
-/* little picture class format */
-/* need to figure out how to space each box to fill it's container better #2 */
+/* little picture class */
 .pic {
   display: flex;
   width: 40%;
@@ -220,7 +204,7 @@ footer ul a:hover {
   padding: var(--pad-sec);
   margin: var(--marg-sec);
 }
-/* pic images format */
+/* pic image format */
 .pic img {
   cursor: pointer;
   width: 100%;
@@ -228,7 +212,7 @@ footer ul a:hover {
   border-radius: 60px;
   object-fit: cover;
 }
-/* grow and change color of pics */
+/* grow and change color of pic */
 .pic:hover {
   cursor: pointer;
   background-color: var(--lblue);
