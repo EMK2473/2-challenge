@@ -154,7 +154,9 @@ footer ul a:hover {
 }
 
 /* about me aside */
+/* i need to figure out how to scale this with */
 .aside {
+  display: flexbox;
   height: 275px;
   border-right: 3px;
   margin: var(--marg-sec);
@@ -178,11 +180,10 @@ footer ul a:hover {
 
 .images {
   display: flex;
-  flex-wrap: wrap;
   background-color: var(--honeydew);
   padding: var(--pad-sec);
   margin: var(--marg-sec);
-  justify-content: space-evenly;
+  justify-content: space-between;
   object-fit: contain;
 }
 /* big picture id */
@@ -210,14 +211,13 @@ footer ul a:hover {
   width: 100%;
   height: 100%;
   border-radius: 60px;
-  object-fit: cover;
 }
 /* grow and change color of pic */
 .pic:hover {
   cursor: pointer;
   background-color: var(--lblue);
-  width: 49%;
-  padding: 30px;
+  width: 41%;
+
 }
 /* big pic image format */
 #big-pic img {
