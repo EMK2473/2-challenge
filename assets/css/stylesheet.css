@@ -25,7 +25,8 @@ main {
   flex-grow: 1;
 }
 body {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -49,10 +50,18 @@ h1 {
   color: var(--h1);
   text-decoration: underline;
   text-align: left;
-  font-size: 250%;
+  font-size: 3rem;
+}
+/* created class for header to format header contents in a row/space evenly */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  contain: content;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
-/* About me and Work headers aside */
+/* About me and Work h2 aside */
 h2 {
   text-decoration: underline;
   text-align: right;
@@ -61,23 +70,12 @@ h2 {
   margin-bottom: var(--marg-sec);
   color: var(--white);
 }
-/* footer heading style */
+/* footer h3 style */
 h3 {
   color: black;
   font-size: 250%;
-  text-align: center;
   text-decoration: underline;
 }
-
-header img {
-  margin-left: 250px;
-
-}
-
-header ul a {
-  text-align: right;
-}
-
 
 header ul a:hover {
   color: var(--white);
@@ -91,9 +89,13 @@ nav {
   border-radius: 60px;
   padding: var(--pad-sec);
   margin: var(--marg-sec);
-  justify-content: right;
 }
 
+.nav {
+  display: flex;
+  contain: content;
+  justify-content: right;
+}
 nav a {
   cursor: pointer;
   position: relative;
@@ -104,7 +106,7 @@ nav a {
 
 /* something cool */
 nav h1 a:hover::after {
-  content: " This is kind of cool.";
+  content: "This is kind of cool.";
   color: var(--wine);
   text-decoration: underline;
   text-decoration-color: var(--wine);
@@ -154,22 +156,34 @@ footer ul a:hover {
 }
 
 /* about me aside */
-/* i need to figure out how to scale this with */
+
 .aside {
+  display: flex;
+  flex-wrap: wrap;
+  contain: content;
+}
+
+#aside {
   display: flexbox;
   height: 275px;
-  border-right: 3px;
   margin: var(--marg-sec);
-  border-right-style: solid;
   margin-bottom: 100px;
 }
 /* work aside */
-.aside2 {
-  height: 1900px;
-  border-right: 3px;
+#aside2 {
+  height: 100%;
   margin: var(--marg-sec);
-  border-right-style: solid;
 }
+
+#resume {
+  display: flex;
+  flex-wrap: wrap;
+  contain: content;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+
 /* class for big image */
 .big-image {
   flex-basis: 100%;
@@ -217,8 +231,8 @@ footer ul a:hover {
   cursor: pointer;
   background-color: var(--lblue);
   width: 41%;
-
 }
+
 /* big pic image format */
 #big-pic img {
   cursor: pointer;
@@ -236,9 +250,9 @@ footer ul a:hover {
 /* need to resolve media query */
 @media screen and (max-width: 768px) {
   main,
-  nav {
+  nav,
+  body,
+  section {
     flex-direction: column;
   }
 }
-
-
