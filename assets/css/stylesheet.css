@@ -44,7 +44,7 @@ header {
   color: var(--white);
 }
 /* padding for About-me/work/resume/contact-me */
-#ul{
+ul{
   padding: var(--pad-sec);
   margin: var(--marg-sec);
 }
@@ -60,7 +60,6 @@ h1 {
 .header {
   display: flex;
   flex-wrap: wrap;
-  contain: content;
   justify-content: space-between;
   align-items: flex-end;
 }
@@ -135,6 +134,7 @@ nav h1 a:hover::after {
 /* aside section */
 aside {
   flex: 2;
+  justify-content: flex-start;
   border-radius: 60px;
   background-color: var(--dgray);
   border-color: var(--black);
