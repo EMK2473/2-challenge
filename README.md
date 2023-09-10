@@ -1,5 +1,9 @@
 # 2-Challenge
 ## Homework Challenge 2
+# Description:
+- This website was created to serve as a portfolio of my work in web development throughout this Software Development Bootcamp. It is designed to allow me to add and adjust my work and projects along the way. The site contains internal links that navigate throughout the site. Including my work, my resume, an about me section, and how to contact me.
+
+
 ### In this challenge, I:
 - Created a header that contains a title, an avatar, and anchored elements, that highlight when hovered, and are linked to their corresponding sites.
 - Created a Nav bar that contains something cool.
