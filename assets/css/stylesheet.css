@@ -44,7 +44,7 @@ header {
   color: var(--white);
 }
 /* padding for About-me/work/resume/contact-me */
-ul{
+ul {
   padding: var(--pad-sec);
   margin: var(--marg-sec);
 }
@@ -189,7 +189,6 @@ footer ul a:hover {
   contain: content;
   justify-content: flex-start;
 }
-
 
 /* class for big image */
 .big-image {
